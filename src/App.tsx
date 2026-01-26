@@ -81,8 +81,9 @@ useEffect(() => {
   
   return loading ? <Loader /> : (
   <Router>
-    <Header user={user} />
+    
       <Suspense fallback={<Loader />} >
+      <Header user={user} />
         <Routes>
           {/* frontEnd Header Routes */}
 

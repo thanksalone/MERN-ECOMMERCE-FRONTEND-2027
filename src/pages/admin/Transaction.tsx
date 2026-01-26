@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState, type ReactElement } from "react";
+import { useEffect, useState, type ReactElement } from "react";
 import { useSelector } from "react-redux";
 import type { Column } from "react-table";
 import AdminSidebar from "../../components/admin/AdminSidebar";

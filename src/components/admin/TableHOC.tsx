@@ -50,7 +50,7 @@ function TableHOC<T extends Object>(
                     {column.isSorted && (
                       <span>
                         {""}
-                        {column.isSortDesc ? (
+                        {column.isSortedDesc ? (
                           <AiOutlineSortDescending />
                         ):(<AiOutlineSortAscending />)}
                       </span>

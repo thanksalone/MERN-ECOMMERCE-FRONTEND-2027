@@ -27,7 +27,7 @@ const Stopwatch = () => {
   };
 
   useEffect(() => {
-    let intervalID: number;
+    let intervalID: ReturnType<typeof setInterval>;
     if (IsRunning)
       intervalID = setInterval(() => {
         setTime((prev) => prev + 1);

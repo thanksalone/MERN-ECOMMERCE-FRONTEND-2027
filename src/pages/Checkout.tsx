@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import type { NewOrderRequest } from '../types/api-types';
 import { useDispatch, useSelector } from 'react-redux';
-import type { CartReducerInitialState, UserReducerInitialState } from '../types/reducer-types';
+import type { CartReducerInitialState } from '../types/reducer-types';
 import { useNewOrderMutation } from '../redux/api/orderAPI';
 // import { userAPI } from '../redux/api/userAPI';
 import { resetCart } from '../redux/reducer/cartReducer';

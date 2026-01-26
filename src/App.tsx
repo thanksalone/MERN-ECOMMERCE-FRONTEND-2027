@@ -83,6 +83,7 @@ useEffect(() => {
   <Router>
     
       <Suspense fallback={<Loader />} >
+        
       <Header user={user} />
         <Routes>
           {/* frontEnd Header Routes */}

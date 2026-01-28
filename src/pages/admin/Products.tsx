@@ -53,7 +53,7 @@ const Products = () => {
     if (data) 
     setRows(
       data.product.map((i) => ({
-        photo: <img src= {`${CLOUD_SERVER}/${i.photo}`} />,
+        photo: <img src= "https://res.cloudinary.com/drhsmyekn/image/upload/v1769632294/mern_uploads/fljive7lwpf0wvc3nnnk"/>,
         name: i.name,
         price: i.price,
         stock: i.stock,

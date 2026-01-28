@@ -100,7 +100,7 @@ const {user} = useSelector(
                         <ProductCard
                         key={i._id}
                         name={i.name}
-                        photo={photo}
+                        photo={i.photo}
                         productId={i.productId}
                         _id={i._id}
                         quantity={i.quantity}

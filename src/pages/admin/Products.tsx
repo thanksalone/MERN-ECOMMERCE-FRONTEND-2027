@@ -7,7 +7,7 @@ import { FaPlus } from "react-icons/fa";
 import { useAllProductsQuery } from "../../redux/api/productAPI";
 import toast from "react-hot-toast";
 import type { customErrorType } from "../../types/api-types";
-import { CLOUD_SERVER, server } from "../../redux/store";
+import { server } from "../../redux/store";
 import { useSelector } from "react-redux";
 import type { UserReducerInitialState } from "../../types/reducer-types";
 import { Skeleton } from "../../components/Loader";
@@ -53,7 +53,7 @@ const Products = () => {
     if (data) 
     setRows(
       data.product.map((i) => ({
-        photo: <img src= {`${CLOUD_SERVER}/${i.photo}`} />,
+        photo: <img src= {`${server}/${i.photo}`} />,
         name: i.name,
         price: i.price,
         stock: i.stock,

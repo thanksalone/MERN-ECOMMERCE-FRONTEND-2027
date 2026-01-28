@@ -4,7 +4,6 @@ import type { UserReducerInitialState } from "../../../types/reducer-types";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import { useDeleteProductMutation, useProductDetailQuery, useUpdateProductMutation } from "../../../redux/api/productAPI";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { server } from "../../../redux/store";
 import { Skeleton } from "../../../components/Loader";
 import { responseToast } from "../../../utils/features";
 import { FaTrash } from "react-icons/fa";
@@ -135,7 +134,7 @@ const ProductManagement = () => {
                    <section>
           <strong>ID - {data?.product._id}</strong>
 
-          <img src={`${server}/${photo}`} alt="product" />          
+          <img src={photo} alt="product" />          
           <p>{name}</p>
           {stock > 0 ? (<span className="green">{stock} Available</span>)
           : <span className="red">Not Available</span>  

@@ -4,7 +4,6 @@ import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { Skeleton } from "../../../components/Loader";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import { useDeleteOrderMutation, useOrderDetailsQuery, useUpdateOrderMutation } from "../../../redux/api/orderAPI";
-import { server } from "../../../redux/store";
 import type { UserReducerInitialState } from "../../../types/reducer-types";
 import type { OrderItem, OrderType } from "../../../types/types";
 import { responseToast } from "../../../utils/features";
@@ -101,7 +100,7 @@ const {user} = useSelector(
                         <ProductCard
                         key={i._id}
                         name={i.name}
-                        photo={`${server}/${i.photo}`}
+                        photo={i.photo}
                         productId={i.productId}
                         _id={i._id}
                         quantity={i.quantity}

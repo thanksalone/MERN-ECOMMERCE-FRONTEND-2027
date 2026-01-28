@@ -9,6 +9,7 @@ interface ImportMetaEnv {
   readonly VITE_SERVER_URL: string;
   readonly VITE_STRIPE_KEY: string;
   readonly VITE_SERVER: string;
+  readonly VITE_CLOUD_SERVER: string;
   // Add other env variables you're using
 }
 

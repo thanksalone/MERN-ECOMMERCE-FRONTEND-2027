@@ -12,6 +12,7 @@ import { dashboardApi } from "./api/dashboardAPI";
 // import { dashboardApi } from "./api/dashboardAPI";
 
 export const server = import.meta.env.VITE_SERVER;
+export const CLOUD_SERVER = import.meta.env.VITE_CLOUD_SERVER;
 
 
 

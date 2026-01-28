@@ -1,7 +1,6 @@
 import { FaExpandAlt, FaPlus } from "react-icons/fa";
 // import type { CartItem } from "../types/types";
 import { Link } from "react-router-dom";
-import { server } from "../redux/store";
 import type { cartItems } from "../types/types";
 
 type ProductProps = {
@@ -24,7 +23,7 @@ const ProductCard = ({
 }: ProductProps)=> {
 return (
   <><div className="product-card">
-    <img src={`${server}/${photo}`} alt="" />
+    <img src={photo} alt="" />
     <p>{name}</p>
     <span>{price}</span>
 

@@ -18,6 +18,7 @@ import { useDispatch } from "react-redux";
 import type { cartItems } from "../types/types";
 import toast from "react-hot-toast";
 import { addToCart } from "../redux/reducer/cartReducer";
+import { CLOUD_SERVER } from "../redux/store";
 
 const clients = [
   {
@@ -176,7 +177,7 @@ const Home = () => {
                 price={i.price}
                 stock={i.stock}
                 handler={addToCartHandler}
-                photo={i.photo}
+                photo={`${CLOUD_SERVER}/${i.photo}`}
               />
               ))
             }

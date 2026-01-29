@@ -7,6 +7,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { Skeleton } from "../../../components/Loader";
 import { responseToast } from "../../../utils/features";
 import { FaTrash } from "react-icons/fa";
+import { CLOUD_SERVER } from "../../../redux/store";
 
 
 
@@ -134,7 +135,7 @@ const ProductManagement = () => {
                    <section>
           <strong>ID - {data?.product._id}</strong>
 
-          <img src={photo} alt="product" />          
+          <img src={`${CLOUD_SERVER}/${photo}`} alt="product" />          
           <p>{name}</p>
           {stock > 0 ? (<span className="green">{stock} Available</span>)
           : <span className="red">Not Available</span>  

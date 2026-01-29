@@ -7,6 +7,7 @@ import { Skeleton } from "../components/Loader";
 import { useDispatch } from "react-redux";
 import type { cartItems } from "../types/types";
 import { addToCart } from "../redux/reducer/cartReducer";
+import { CLOUD_SERVER } from "../redux/store";
 
 const Search = () => {
 
@@ -100,7 +101,7 @@ const Search = () => {
                 price={i.price}
                 stock={i.stock}
                 handler={addToCartHandler}
-                photo= {i.photo}
+                photo= {`${CLOUD_SERVER}/${i.photo}`}
               />
             ))
           }
